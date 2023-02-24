@@ -6,51 +6,102 @@
       rel="shortcut icon"
       href="none"
       type="image/x-icon"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="styles.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <title>Portfolio</title>
 
     <body>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand text-white mr-5 pl-5 ml-5" href="#">PORTFÓLIO</a>
+      <nav class="navbar navbar-expand-lg sticky-top mb-5 d-flex">
+        <a class="navbar-brand text-white mr-5" href="#"> &lt;PORTFÓLIO/&gt;</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="p-4 mb-0 text-white"id="navbarSupportedContent">
+        <div class="p-4 mb-0 text-white d-flex"id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-white ml-5 pl-5" href="#">SOBRE MIM <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white ml-5" href="#" id="nav-itens">SOBRE MIM <span class="sr-only">(current)</span></a>
             </li>
            
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#">MINHAS SKILLS <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#" id="nav-itens">MINHAS SKILLS <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#">SERVIÇOS <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#" id="nav-itens">SERVIÇOS <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#">PROJETOS <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#" id="nav-itens">PROJETOS <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
       </nav>
-    <div class="p-3 mb-2">
+    <div class="p-3 mb-2 pt-5">
     
+      
     <div class="container">
       <div class="card text-white" style="width: 100%;">
-        <div class="card-body">
-          <h5 class="card-title">Olá, eu sou o</h5>
-          <p class="card-text">Fernando</p>
+        <div class="card-body d-flex justify-content-between">
+          <div class="main-name">
+          <h5 class="card-title mb-0">Olá, eu sou o</h5>
+          <p class="card-text mb-0">Fernando</p>
+          <p class="card-text2">Desenvolvedor Front-End</p>
         </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+        <div class="stats-display-flex">
+          <div class="cube">
+              <div class="green-cube">
+                  <div class="top-green-cube"></div>
+                  <div>
+                      <span style="--i:0;"></span>
+                      <span style="--i:1;"></span>
+                      <span style="--i:2;"></span>
+                      <span style="--i:3;"></span>
+                  </div>
+              </div>
+          </div>
       </div>
     </div>
+    </div>
+    <div class="about-me-container">
+    <h1 class="titulo">Sobre mim  </h1>
+      <p class ="about-me">Olá, meu nome é Fernando Fraga Pla! Tenho 24 anos e sou formado em Análise e
+        Desenvolvimento de Sistemas pela UAM, e atualmente estou cursando
+         o último semestre de Jogos Digitais na FATEC. Possuo foco em
+        Front-End, utilizando tecnologias como HTML, CSS,
+        JavaScript, NodeJS e Python. Atualmente eu estou estudando o framework ReactJS.</p>
 
-    <h1 class="titulo">Meus projetos:  </h1>
-      <h2 class ="subtitulo">ANIMEFLIX</h2>
+        <div class="container d-flex">
+          <div class="row">
+            <div class="col-sm d-flex" id="icons">
+              <svg class="filter-green" xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <p id="icon-title">Github</p><br>
+              <p>NandoPla</p>
+            </div>
+            <div class="col-sm d-flex" id="icons">
+              <svg class="filter-green" xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <p id="icon-title">Linkedin</p><br>
+              <p>fernando-pla</p>
+            </div>
+            <div class="col-sm d-flex" id="icons">
+              <svg class="filter-green" xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+              <p id="icon-title">E-mail</p><br>
+              <p>fernandopla8@gmail.com</p>
+            </div>
+            <div class="col-sm d-flex" id="icons">
+              <svg class="filter-green" xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24"><path d="M18.48 22.926l-1.193.658c-6.979 3.621-19.082-17.494-12.279-21.484l1.145-.637 3.714 6.467-1.139.632c-2.067 1.245 2.76 9.707 4.879 8.545l1.162-.642 3.711 6.461zm-9.808-22.926l-1.68.975 3.714 6.466 1.681-.975-3.715-6.466zm8.613 14.997l-1.68.975 3.714 6.467 1.681-.975-3.715-6.467z"/></svg>
+              <p id="icon-title">Telefone</p><br>
+              <p>(11) 988509900</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
 
     <div class="container">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -75,14 +126,13 @@
         </a>
       </div>
     </div>
-
     
     <footer>
       <div class="bg-dark" style="margin-top: 3%; align-items: center; margin-bottom: 0%;">
         <div class="row justify-content-md-center" style="margin-right: 0;">
           <div class="col col-md-auto">
             <a href="https://github.com/NandoPla">
-            <div class="footer-text mb-3 mt-3">Feito por Fernando Fraga Pla</div>
+            <div class="footer-text mb-3 mt-3 text-white">Feito com ❤ por Fernando Fraga Pla</div>
             </a>
           </div>
         </div>
@@ -90,7 +140,24 @@
     </footer>
   </div>
   </body>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
 
+    <script>
+    AOS.init();
+    </script>
+
+  <!--data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+  -->
+    <script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script> 
     <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

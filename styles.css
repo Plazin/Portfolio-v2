@@ -1,18 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body{
+  background-color: #171717 !important;
+}
+
+#nav-itens{
+  font-family:"Inter" !important;
+  color: #ffffff;
+  font-size: 1.0em;
+  font-weight: bolder !important;
+  transition: .5s !important;
+}
+
+#nav-itens:hover{
+  cursor: pointer !important;
+  color: #00FFB2 !important;
+  transform: scale(1.05);
+  transition: .5s;
+  box-shadow: 0 10px 10px rgb(0, 0, 0), 0 6px 6px rgb(5, 3, 3);
+}
 
 .p-3{
   background-color: #171717 !important;
 }
 
 .container{
+  display: flex;
+  justify-content: end;
   background-color: #171717 !important;
   margin-top: 20px;
   width: 80%;
   height: auto;
+  flex-direction: column
 }
 
 .card{
   background-color: #171717 !important;
+  border:0px !important;
+  flex-direction: row !important;
 }
 
 h1{
@@ -28,30 +56,205 @@ h2{
 }
 
 .titulo{
-
-  margin-top: 50px;
+  margin-top: 1em;
+  font-family:"Inter";
+  color: #00FFB2;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 5%;
 }
 
-.subtitulo{
-
+.about-me{
+  font-size: 1.5em;
+  font-family: "Text Me One";
+  padding: 0% 15% 10% 14%;
   margin-top: 1em;
-  color: red;
+  color: rgb(255, 255, 255);
+  text-align: center
+}
+
+.about-me-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
 }
 
 .text-white{
-  color:rgb(252, 0, 0) !important;
+  color:rgb(255, 255, 255) !important;
 }
 .navbar{
   background-color: #171717;
+  box-shadow: 5px 5px 8px #0000006e;
+  display: flex;
+  justify-content: space-evenly !important;
 }
 
 .navbar-brand{
   font-size: 2em !important;
   font-weight: bolder;
+  
+}
+
+.card-title{
+  font-family:"Inter";
+  color: #ffffff;
+  font-size: 3.0em;
+  font-weight: bolder;
+}
+
+.card-body{
+  padding:0 !important;
 }
 
 .card-text{
-  font-family: Bebas-Neue;
+  font-family:"Text Me One";
   color: #00FFB2;
-  font-size: 2em;
+  font-size: 4.3em;
+  font-weight: lighter;
+}
+
+.card-text2{
+  font-family:"Text Me One";
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: lighter;
+}
+
+.animated{
+  size: 1% !important;
+}
+
+svg:not(:root) {
+  width: 70%;
+}
+
+.d-flex{
+  align-items: center;
+}
+
+.d-flex{
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filter-green{
+  filter: invert(30%) sepia(97%) saturate(2320%) hue-rotate(508deg) brightness(118%) contrast(119%);
+}
+
+p{
+  color:white;
+  font-family:"Text Me One";
+}
+
+#icons{
+  flex-direction: column;
+  
+}
+
+#icon-title{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*eh o cubos */
+
+.green-cube{
+  width: 301px;
+  height: 301px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+      transform: rotateX(-30deg) rotateY(0deg);
+  }
+
+  100%{
+      transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.green-cube div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.green-cube div span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#151515,#00FFB2);
+  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.top-green-cube{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.top-green-cube::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  background: #00FFB2;
+  transform: translateZ(-380px);
+  filter: blur(120px);
+}
+
+.cube{
+  padding: 5%;
+}
+
+@media (max-height:768px) and (max-width:1366px){
+  .cube{
+    display:none;
+  }
+}
+
+.config-title{
+  margin-top: 0;
+  color: orange;
+  font-family:"Bebas Neue";
+  font-size: 100px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 }
