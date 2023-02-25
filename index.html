@@ -23,19 +23,19 @@
         <div class="p-4 mb-0 text-white "id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-white ml-5" href="#" id="nav-itens">SOBRE MIM <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white ml-5" href="#sobre-mim" id="nav-itens">SOBRE MIM <span class="sr-only">(current)</span></a>
             </li>
            
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#" id="nav-itens">MINHAS SKILLS <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#minhas-skills" id="nav-itens">MINHAS SKILLS <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#" id="nav-itens">SERVIÇOS <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#meus-servicos" id="nav-itens">SERVIÇOS <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#" id="nav-itens">PROJETOS <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#meus-projetos" id="nav-itens">PROJETOS <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -47,7 +47,7 @@
         <div class="card-body d-flex justify-content-between">
           <div class="main-name">
           <h5 class="card-title mb-0">Olá, eu sou o</h5>
-          <p class="card-text mb-0">Fernando</p>
+          <p class="card-text mb-0" id="name-animated">Fernando</p>
           <p class="card-text2">Desenvolvedor Front-End Jr</p>
         </div>
         </div>
@@ -69,7 +69,7 @@
     </div>
     </div>
     <div class="about-me-container">
-    <h1 class="titulo">Sobre mim  </h1>
+    <h1 id="sobre-mim" class="titulo">Sobre mim</h1>
       <p class ="about-me">Olá, meu nome é Fernando Fraga Pla! Tenho 24 anos e sou formado em Análise e
         Desenvolvimento de Sistemas pela UAM, e atualmente estou cursando
          o último semestre de Jogos Digitais na FATEC. Possuo foco em
@@ -104,7 +104,7 @@
       </div>
     </div>
 
-    <div class="about-me-container">
+    <div id="minhas-skills" class="about-me-container">
       <h1 class="titulo2">Minhas Skills</h1>
         <p class ="about-me2">Algumas das tecnologias que uso no dia a dia:</p>
       </div>
@@ -128,12 +128,33 @@
           <div class="col-sm d-flex" id="icons">
             <img class="img-skills" src="/images/logos bootstrap.png">
             <p id="icon-title2">Bootstrap</p><br>
-            
           </div>
         </div>
       </div>
 
-    <div class="container">
+    <div id="meus-servicos" class="services-main">
+      <div class="about-me-container">
+        <h1 class="titulo2">Meus Serviços</h1>
+          <p class ="about-me2">Alguns dos serviços que eu disponibilizo atualmente:</p>
+        </div>
+        <div class="container d-flex">
+          <div class="row">
+            <div class="col-sm d-flex" id="icons">
+              <div class="my-services">
+              <p class="nav-itens" id="p-symbol">< ></p>
+              <p class="nav-itens" id="icon-title4">Criação de Sites</p>
+            </div>
+            </div>
+            <div class="col-sm d-flex" id="icons">
+              <div class="my-services">
+              <p class="nav-itens" id="p-symbol">( )</p>
+              <p class="nav-itens" id="icon-title4">Criação de Jogos</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="meus-projetos" class="container">
       <h1 class="titulo2">Projetos</h1>
         <p class ="about-me3">Alguns exemplos de projetos que eu desenvolvi:</p>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

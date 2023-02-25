@@ -36,6 +36,28 @@ body{
   display: inline-block;
 }
 
+.nav-itens{
+  font-family:"Inter";
+  font-size: 1.01em;
+  font-weight: bolder !important;
+  background-image: linear-gradient(
+    -365deg,
+    #231557 0%,
+    #0051ff 29%,
+    #00FFB2 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
 #nav-itens2{
   font-family:"Inter";
   font-size: 1.01em;
@@ -150,10 +172,13 @@ h2{
 }
 
 .card-text{
+  border-right: 1px solid rgba(255, 255, 255, .765);
   font-family:"Text Me One";
   color: #00FFB2;
   font-size: 4.3em;
   font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card-text2{
@@ -211,6 +236,18 @@ p{
   font-size: 1.2em;
   font-weight: bold;
   padding-top: 3%;
+}
+
+#icon-title4{
+  font-size: 1.8em;
+  font-weight: bolder !important;
+}
+
+#p-symbol{
+  margin:0% !important;
+  padding-bottom: 0%;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 .icon-sub-title{
@@ -295,6 +332,19 @@ p{
   border-radius: 10%;
 }
 
+.my-services{
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  transition: .5s;
+  box-shadow: 5px 5px 8px #0000006e;
+  border-radius: 10%;
+}
+
 .about-me2{
   font-size: 1.5em;
   font-family: "Text Me One";
@@ -323,4 +373,29 @@ p{
   #img-carousel{
     width: 1874px;
     height: 536px;
+  }
+
+  .services-main{
+    padding: 5% 0% 15% 0%;
+  }
+
+#name-animated{
+  animation: blinkCursor 800ms steps(40) infinite normal, typing 1s steps(8) 2s normal both;
+}
+  
+  @keyframes blinkCursor{
+      from{
+        border-right-color: rgba(255, 255, 255, .75);
+      }
+      to{
+        border-right-color: transparent;
+      }
+  }
+
+  @keyframes typing {
+    from{
+      width: 0;
+    } to {
+      width: 3.8em;
+    }
   }
