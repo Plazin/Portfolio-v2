@@ -224,6 +224,7 @@ p{
 #icon-title{
   font-size: 1.5em;
   font-weight: bold;
+  text-align: center;
 }
 
 #icon-title2{
@@ -402,6 +403,10 @@ p{
     }
   }
 
+  a{
+    cursor: pointer;
+  }
+  
 /* RESPOSIVIDADE */
 
   .spin-cube{
