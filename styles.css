@@ -436,7 +436,9 @@ p{
 
 /* RESPOSIVIDADE */
 
-  @media screen and (max-width: 430px) {
+/* APARELHOS LARGE = 425 PX LARGURA */
+
+  @media screen and (max-width: 426px) {
 
     html{
       display: flex;
@@ -509,7 +511,7 @@ p{
     }
   }
 
-  @media screen and (min-width: 430px) {
+  @media screen and (min-width: 426px) {
 
     #mobile-services{
       display:none !important;
