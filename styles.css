@@ -438,7 +438,7 @@ p{
 
 /* APARELHOS LARGE = 425 PX LARGURA */
 
-  @media screen and (max-width: 426px) {
+  @media all and (max-width: 426px) {
 
     html{
       display: flex;
@@ -511,7 +511,7 @@ p{
     }
   }
 
-  @media screen and (min-width: 426px) {
+  @media all and (min-width: 426px) {
 
     #mobile-services{
       display:none !important;
@@ -523,5 +523,80 @@ p{
     }
     .desktop-nav{
       display: none;
+    }
+  }
+
+  /* APARELHOS MEDIUM = 375 PX LARGURA */
+
+  @media all and (max-width: 375px) {
+
+    html{
+      display: flex;
+    }
+
+    .my-services{
+      font-size: 0.6em;
+    }
+
+    #icons{
+      width: 150px;
+      height: auto;
+      padding: 0% 30px 10% 30px !important;
+    }
+
+    #desktop-nav{
+      display: none !important;
+    }
+
+    #desktop-services{
+      display:none !important;
+    }
+
+    #navbarSupportedContent{
+      display: none !important;
+    }
+
+    #nav-itens2{
+      display: none;
+    }
+
+    .pos-f-t{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .spin-cube {
+      display: none;
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+    }
+    #icons{
+      padding-top: 10%;
+    }
+
+    #img-carousel{
+      width: 450px;
+      height: 200px;
+    }
+
+    main-page{
+      text-align: center;
+    }
+
+    .about-me{
+      padding:10px;
+    }
+
+    .d-flex{
+      flex-direction: column !important;
+    }
+
+    footer{
+      display: flex;
+      justify-content: center;
     }
   }
