@@ -14,12 +14,39 @@
     <title>Portfolio</title>
 
     <body>
-      <nav class="navbar navbar-expand-lg sticky-top mb-5 d-flex">
-        <a id="nav-itens2" class="navbar-brand text-white mr-5" href="#"> &lt;FERNANDO/&gt;</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
+      <!--nav mobile-->
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="p-4">
+            <a id="nav-itens3" class="navbar-brand text-white mr-5" href="#">SEJA BEM VINDO :)</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#sobre-mim" id="nav-itens">SOBRE MIM <span class="sr-only">(current)</span></a>
+              </li>
+             
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#minhas-skills" id="nav-itens">MINHAS SKILLS <span class="sr-only">(current)</span></a>
+              </li>
+  
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#meus-servicos" id="nav-itens">SERVIÇOS <span class="sr-only">(current)</span></a>
+              </li>
+  
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#meus-projetos" id="nav-itens">PROJETOS <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-black pt-4">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+      <!--nav desktop-->
+      <nav class="navbar navbar-expand-lg sticky-top mb-5 d-flex" id="desktop-nav">
+        <a id="nav-itens2" class="navbar-brand text-white mr-5" href="#"> &lt;FERNANDO/&gt;</a>      
         <div class="p-4 mb-0 text-white "id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -40,11 +67,11 @@
           </ul>
         </div>
       </nav>
-    <div class="p-3 mb-2 pt-5">
+    <div class="p-3 mb-2 pt-5" id="main-page">
     
     <div class="container">
       <div class="card text-white" style="width: 100%;">
-        <div class="card-body d-flex justify-content-between">
+        <div class="card-body d-flex justify-content-between" id="main-title">
           <div class="main-name">
           <h5 class="card-title mb-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">Olá, eu sou o</h5>
           <p class="card-text mb-0" id="name-animated">Fernando</p>
@@ -74,7 +101,7 @@
         Desenvolvimento de Sistemas pela UAM, e atualmente estou cursando
          o último semestre de Jogos Digitais na FATEC. Possuo foco em
         Front-End, utilizando tecnologias como HTML, CSS,
-        JavaScript, NodeJS e Python. Atualmente eu estou estudando o framework ReactJS.</p>
+        JavaScript, NodeJS e Python. Atualmente eu estou estudando Javascript e o framework ReactJS, pela</p>
 
         
     </div>
@@ -194,8 +221,7 @@
               usando APIs. Nesse caso, usei a
               API do Twitter e programei um
               bot para tweetar para 
-              mim de forma 
-              automática.</p>
+              mim automaticamente.</p>
           </div>
           
         </div>
@@ -212,7 +238,7 @@
   </div>
 
   <footer>
-    <div class="bg-dark" style="margin-top: 8%">
+    <div class="bg-dark d-flex" style="margin-top: 8%">
       <div class="row justify-content-md-center ml-0" style="margin-right: 0;">
         <div class="col col-md-auto">
           <a href="https://github.com/NandoPla">

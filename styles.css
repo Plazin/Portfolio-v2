@@ -80,6 +80,29 @@ body{
   display: inline-block;
 }
 
+#nav-itens3{
+  margin: 0px !important;
+  font-family:"Inter";
+  font-size: 1.01em;
+  font-weight: bolder !important;
+  background-image: linear-gradient(
+    -365deg,
+    #231557 0%,
+    #0051ff 29%,
+    #00FFB2 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -406,9 +429,69 @@ p{
   a{
     cursor: pointer;
   }
+
   
+
 /* RESPOSIVIDADE */
 
-  .spin-cube{
-    z-index: 100;
+  @media screen and (max-width: 430px) {
+
+    #navbarSupportedContent{
+      display: none !important;
+    }
+
+    #nav-itens2{
+      display: none;
+    }
+
+    .pos-f-t{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+            
+    }
+
+    .spin-cube {
+      display: none;
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+    }
+    #icons{
+      padding-top: 10%;
+    }
+
+    #img-carousel{
+      width: 450px;
+      height: 250px;
+    }
+
+    main-page{
+      text-align: center;
+    }
+
+    .about-me{
+      padding:10px;
+    }
+
+    .d-flex{
+      flex-direction: column !important;
+    }
+
+    footer{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 430px) {
+    .pos-f-t{
+      display: none;
+      
+    }
+    .desktop-nav{
+      display: none;
+    }
   }
