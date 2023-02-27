@@ -442,6 +442,16 @@ p{
       display: flex;
     }
 
+    .my-services{
+      font-size: 0.8em;
+    }
+
+    #icons{
+      width: 180px;
+      height: auto;
+      padding: 0% 30px 10% 30px !important;
+    }
+
     #desktop-nav{
       display: none !important;
     }
