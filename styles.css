@@ -442,6 +442,10 @@ p{
       display: flex;
     }
 
+    #desktop-nav{
+      display: none !important;
+    }
+
     #desktop-services{
       display:none !important;
     }
@@ -474,7 +478,7 @@ p{
 
     #img-carousel{
       width: 450px;
-      height: 250px;
+      height: 200px;
     }
 
     main-page{
