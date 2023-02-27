@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
+
 body{
   background-color: #171717 !important;
 }
@@ -436,6 +438,14 @@ p{
 
   @media screen and (max-width: 430px) {
 
+    html{
+      display: flex;
+    }
+
+    #desktop-services{
+      display:none !important;
+    }
+
     #navbarSupportedContent{
       display: none !important;
     }
@@ -449,7 +459,6 @@ p{
       justify-content: center;
       text-align: center;
       flex-direction: column;
-            
     }
 
     .spin-cube {
@@ -487,6 +496,11 @@ p{
   }
 
   @media screen and (min-width: 430px) {
+
+    #mobile-services{
+      display:none !important;
+    }
+
     .pos-f-t{
       display: none;
       
